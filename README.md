@@ -1,4 +1,65 @@
-Savoria 🍽️OverviewSavoria is a centralized web application designed to optimize restaurant operations by replacing manual phone bookings with real-time table reservations and digital pre-ordering. The platform eliminates third-party aggregator commissions while providing customers with instant seat allocation and curated dining menus.   Features🪑 Real-time table reservation engine with double-booking conflict prevention   📋 Interactive categorized digital menu with dietary filters (Veg / Non-Veg)   🛒 Seamless cart pre-ordering linked directly to table bookings   🛡️ Secure customer and admin authentication using JWT and password hashing   📊 Centralized administrative console for floorplan overrides and menu management   ✉️ Automated email confirmations with unique booking token generation   FrontendThe frontend delivers a responsive, modern interface for diners to browse floorplans and menu items seamlessly across devices.   Technologies used:React.js   Vite   Tailwind CSS   React Router DOM   Context API (Auth & Cart state management)   Axios   BackendThe backend serves as the core business logic engine, handling reservation scheduling, authentication barriers, and database transactions.   Functions:RESTful API routing and endpoint management   Atomic table slot checking and concurrency lock enforcement   JWT token authentication and role authorization middleware   Automated email notification dispatch via SMTP   Technologies:Node.js   Express.js   MongoDB Atlas / Mongoose (with MySQL / Sequelize option)   Bcrypt.js   Nodemailer   ScriptsCommon development scripts used in this project:Bashnpm install
-npm run dev
-npm run build
-These scripts install project dependencies, launch the local development environment, and compile the application for production deployment.AuthorDeveloped by Taruna Ezhumalai  
+# 🍽️ Savoria — Smart Restaurant Reservation & Pre-Ordering System
+
+## 📌 Overview
+
+**Savoria** is a centralized web application designed to streamline restaurant operations by replacing manual phone bookings with real-time table reservations and digital food pre-ordering.
+
+The platform aims to reduce dependency on third-party aggregators and their commissions while providing customers with convenient table selection, menu browsing, and a seamless dining experience.
+
+## ✨ Features
+
+- 🪑 **Real-Time Table Reservations** — Efficient booking management with double-booking conflict prevention.
+- 📋 **Interactive Digital Menu** — Browse categorized menu items with Veg and Non-Veg filters.
+- 🛒 **Digital Pre-Ordering** — Add menu items to a cart and associate orders with table reservations.
+- 🛡️ **Secure Authentication** — Customer and admin authentication using JWT and password hashing.
+- 📊 **Admin Dashboard** — Manage menus, reservations, and table allocations.
+- ✉️ **Email Confirmations** — Automated booking notifications with unique booking tokens.
+- 📱 **Responsive Interface** — Access the platform across desktop, tablet, and mobile devices.
+
+## 🖥️ Frontend
+
+The frontend provides a responsive interface for customers to explore menus, select tables, manage carts, and make reservations.
+
+**Technologies Used**
+- React.js
+- Vite
+- Tailwind CSS
+- React Router DOM
+- Context API for authentication and cart state management
+- Axios for API communication
+
+## ⚙️ Backend
+
+The backend manages business logic, reservation scheduling, authentication, and communication between the frontend and database.
+
+**Key Functions**
+- RESTful API routing and endpoint management
+- Table availability validation and booking conflict prevention
+- JWT authentication and role-based authorization
+- Password hashing for secure credential storage
+- Email notifications through SMTP
+- Database operations for reservations, users, and menu items
+
+**Technologies Used**
+- Node.js
+- Express.js
+- MongoDB Atlas with Mongoose
+- MySQL with Sequelize as an alternative database option
+- JSON Web Tokens (JWT)
+- Bcrypt.js
+- Nodemailer
+
+
+## 🔐 Security
+
+- JWT-based authentication and authorization
+- Password hashing
+- Server-side validation of reservation requests
+- Prevention of conflicting table bookings
+- Environment-based configuration for sensitive credentials
+
+## 👩‍💻 Author
+
+**Taruna Ezhumalai**
+
+Developed as a restaurant reservation and digital pre-ordering web application.
